@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rusty Steele</title>
+</head>
+<body>
+	<h1>Rusty Steele</h1>
+	<div>Hi, I'm a dog. Woof!</div>
+	<br>
+	<div>
+		<img src="http://mediad.publicbroadcasting.net/p/wliu/files/styles/x_large/public/201405/2459020872_607513a54c.jpg?_ga=2.255305608.1240801230.1546002926-1103959160.1546002925">
+	</div>
+	<div>
+		<h3>Some of my favourite places</h3>
+		<ul>
+			<li>The Beach</li>
+			<li>The Park</li>
+			<li>The Fire Hydrant</li>
+		</ul>
+	</div>
+	Make sure  to folow me on <a href="http://www.instagram.com/ankit_c11">instagram</a>
+
+</body>
+</html>
