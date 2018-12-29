@@ -1,0 +1,48 @@
+//All Css Theory
+Basic Syntax of css is
+   selector {
+            property: value;
+            anotherProperty: value;
+            }
+Like- h1{
+       color: purple;
+       font-size: 56px;
+       }
+       
+      img{
+      border-color:red;
+      border-width: 3px;
+      }
+      
+ //This is a basic CSS file and we write css code in the head tag of html.
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>About me</title>
+
+	<style type="text/css">
+		
+		h1 {
+			color: purple;
+		}
+
+		h4{
+			color: red;
+		}
+		li{
+			text-transform: capitalize;
+		}
+	</style>
+</head>
+<body>
+<h1>About me</h1>
+
+<h4>MY Hobbies</h4>
+<ul>
+	<li>Playing Guitar</li>
+	<li>Cooking</li>
+	<li>Singing</li>
+</ul>
+</body>
+</html>   
+
