@@ -39,7 +39,7 @@
 <br>
 
 <p>I agree to the terms and conditions</p>
-<input type="radio" name="Terms and conditions" value="Checked" required>
+<input type="checkbox" name="Terms and conditions"  value="Checked" required>
 <br>
 <input type="submit" >
 </form>
