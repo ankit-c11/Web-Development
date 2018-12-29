@@ -1,0 +1,47 @@
+//Proper use of Name and value tag. Name tag will be used like for telling the output and value will be given as the output if mentioned.
+//Use of date tag using max and min tag for giving maximum and minimum value.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<br><br>
+<form>
+
+<label for="fname">First Name:</label>
+<input id="fname" type="name" name="FirstName" required placeholder="John">
+<label for="lname"> Last Name:</label>
+<input id="lname" type="name" name="LastName" placeholder="Smith" required>
+
+<br>
+
+<label for="m">Male</label>
+<input id="m" type="radio" name="Gender" value="Male" required>
+<label for="f">Female</label>
+<input id="f" type="radio" name="Gender" value="Female">
+<label for="oth">Other</label>
+<input id="oth" type="radio" name="Gender" value="other">
+
+<br>
+
+<label for="em">Email:</label>
+<input id="em" type="email" name="Email" required>
+<label for="pas">Password:</label>
+<input id="pas" type="password" name="Password" required maxlength="12" minlength="5">
+
+<br>
+
+<label for="bir">Birthday: </label>
+<input id="bir" type="date" name="Date" value="2017-06-11" max="2019-01-25" min="1980-01-01">
+<br>
+
+<p>I agree to the terms and conditions</p>
+<input type="radio" name="Terms and conditions" value="Checked" required>
+<br>
+<input type="submit" >
+</form>
+</body>
+</html>
