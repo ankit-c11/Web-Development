@@ -1,0 +1,32 @@
+//HexaDecimal Color system
+#______   <-- There are six places. Two places for each color. i.e Red Green Blue. 
+Hexa-Decimal Base-16 , it goes like --> 0123456789ABCDEF    F* is the biggest number and 0 is the smallest. Like Largest 3 digit number is FFF and smallest three digit number is 000.
+If one has to write code for Deep red it'll be #FF0000
+Code for deep green- #00FF00
+Code for blue- #0000FF
+(We can use website like colorpicker to get the code of all the colors.)
+#FFFFFF will give us white color.
+
+//Another method for color
+Using 3 chanels-RGB(red,green,blue) Eacg rabges frin 0-250
+for eg.    h1{
+              color: rgb(0,255,0);
+              }
+       will give green color.
+       
+       
+  And       rgb(0,0,0); -- BLACK COLOR
+  
+  
+//Another method for color
+
+RGBA- It's same as RGB Above just A stands for alpha(transparency channel) which is used for transparency.
+ A- Ranges- 0.0 to 1.0
+ 
+ eg. h1{
+    color: rgba(0,255,0,1);
+}
+
+h4{
+	color: rgba(0,255,0,0.1);
+}
