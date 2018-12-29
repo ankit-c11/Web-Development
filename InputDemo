@@ -1,0 +1,32 @@
+//Select tag is for drop down option options. Name tag is used for assigning two tags the same name i.e it tells the two radio button is connected
+//Value tag is used to show what final values will be shown after submitting the radio button.
+//With Select tag we use option tag to give the various options to choose.
+//Name is somekind used as show the output at the top like whatever value will have to be given by the computer will be given on the top.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input demo</title>
+</head>
+<body>
+<p>What you like the most?</p>
+<form>
+<label for="a">Dogs</label>
+<input id="a" type="radio" name="petChoice" value="Dogs" required>
+<label for="b">Cats</label>
+<input id="b" type="radio" name="petChoice" value="Cats" required>
+
+
+<p>Choose any color</p>
+<select name="color" required>
+	<option></option>
+	<option>Red </option>
+	<option>Blue</option>
+	<option>Green</option>
+</select>
+<br>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
