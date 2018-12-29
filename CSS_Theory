@@ -46,3 +46,52 @@ Like- h1{
 </body>
 </html>   
 
+//Linking CSS With html.
+We just have to create two files, one html and another one is CSS. To link css with html we use link tag and and put the name of the css file there.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="ayush.css">
+</head>
+<body>
+	<p>Linking HTML with CSS</p>
+
+
+</body>
+</html>
+
+
+
+//Much more about border and backgroud color.
+
+h1{
+	background: red;
+	color: rgb(0,0,0);
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+}
+
+/*Border is used with three atributes color width and style*/ 
+
+/*Or we can use another method for border*/
+
+h1{
+    border:8px dashed purple;
+}
+
+h4{
+	background: #00FF00;
+	color: rgb(0,0,255);
+}
+
+li{
+	background: #025513;
+}
+body{
+	background: url(https://nighthelper.com/wp-content/uploads/2016/03/nature_waterfall_summer_lake_trees_90400_3840x2160.jpg);
+    background-size: cover;
+}
+
+//If we wanna change the backgroud color of the body first we have to use the tag body and then background inside it with the atribute url().
