@@ -96,3 +96,77 @@ body{
 }
 
 //If we wanna change the backgroud color of the body first we have to use the tag body and then background inside it with the atribute url().
+
+//In a list we can use special id to choose particular list in the given number of lists. Unique id in list is used as given
+
+----HTML CODE
+<ul>
+	<li class="a">
+		<input type="checkbox"> Life
+	</li>
+	<li class="a">
+		<input type="checkbox" name=""> School
+	</li>
+	<li id="special">
+		<input type="checkbox" name="">Fun
+	</li
+	
+	>CSS CODE----
+
+#special{
+	border:1px dashed red;
+	background: green;
+}
+
+.a{
+	border:3px solid blue ;
+	text-decoration: line-through;
+}
+
+//We can also use class to particularise something. Its starts with " . " ; a dot.
+// Basically if we wanna particularise one item we use id and if we wanna particularise two or three or more items together we will use class. just have to give same class name to every item and use it to modify the properties.
+
+
+
+//Selectors: Now talking about some important selectors
+1. Star selector- It'll select all the elements on the page. Syntax- * {
+                                                                          property: ;
+									  }
+2. Descendanat Selector- It'll help to select an element inside an element i.e 
+   li a { } means all anchor tag inside the li tag.
+   
+3. Adjacent Selector- It helps to slecelt the tag element after some certain tag like 
+
+  h4 + ul {} , It means all the ul tag after h4 tag.
+  
+4. Attribute Selector- We can select many element with the same attribute.By using []. 
+For eg. a[href:"http://www.google.com"] {
+                             backgroud: blue;
+			     }
+    eg:   input[type="text"] {
+	background: blue;
+	}
+	
+5. Nth of types selector: If we want to select an element particularly inside an element like in a number of lists we have to select a particular list we'll use this selector.
+ li: nth-of -type(3) {
+      background: purple;
+         }
+	 
+ li: nth-of -type(even) {
+      background: purple;
+         }
+
+//Talking about specificity, in the css specificity goes as in increasing order given below
+First type selectors: li{}
+li a{}
+li+a{}
+Then class atrribute selectors
+.class{}
+then
+input[type="text"] {}
+
+Then the superior one is
+ID Selector
+#ID for which we first assign ID to someone then write #ayush {
+                            backgroud:green;
+			    }
