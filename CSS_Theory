@@ -172,3 +172,75 @@ ID Selector
 			    }
 //For selectors: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048 
 
+//Some selectors for the link
+1.  X[title]	
+    a[title] {
+      color: green;
+      }
+2. X[href="foo"]
+   a[href="http://net.tutsplus.com"] {
+  color: #1f6053; /* nettuts green */
+}
+
+3. X[href*="nettuts"]
+  a[href*="tuts"] {
+  color: #1f6053; /* nettuts green */
+}
+
+4. X[href^="http"]
+   a[href^="http"] {
+   background: url(path/to/external/icon.png) no-repeat;
+   padding-left: 10px;
+  }
+5. X[href$=".jpg"]
+   a[href$=".jpg"] {
+   color: red;
+}
+
+["^" -> It's for the beginning and "$" for the end.]
+
+//Code to aplly shadows on css
+HTML Code-
+<div class="z">
+	<img src="ayush.jpg"  >
+    </div>
+    
+CSS Code-
+
+body{
+				width: 500px;
+				margin: 50px auto;
+				position: relative;
+			}
+
+.z {
+			-webkit-box-shadow: 10px 10px 10px rgba(0,255,0,0.5);  //Main function used to implement shadows.
+			-moz-box-shadow: 10px 10px 10px rgba(0,255,0,0.5);    //we use this code so that this shadow thing will
+			box-shadow: 10px 10px 10px rgba(0,255,0,0.5);           work on mozzila and elsewehere.
+			padding: 10px; 
+			background: white;
+			
+		}
+
+.z img {
+	max-width: 100%;
+	border: 2px inset blue; 
+}
+
+
+.z:after {
+   content: " ";
+   -webkit-box-shadow:10px 10px 10px 20px rgba(0,0,0,0.5);
+   -moz-box-shadow:10px 10px 10px 20px rgba(0,0,0,0.5);
+   box-shadow:10px 10px 10px 20px rgba(0,0,0,0.5);
+   position: absolute; 
+   width: 30%;
+   bottom: 20px;
+   right: 90px;
+   height:40px;
+   z-index: -1; /*it'll put the shadow backword*/
+   -webkit-transform: skew(-70deg);
+   -moz-transform: skew(-70deg);
+   transform: skew(-70deg);
+
+}
