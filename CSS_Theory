@@ -251,3 +251,20 @@ font-weight- To set the boldness of the font. It goes from 100 to 800. 100 is th
 line-height- To maintain the gap between two consecutive lines vertically.It goes like 1, 1.5, 2 ..
 text-align- To set the alignment of the text like center
 text-decoration- To set some properties like line through or underline.
+
+
+//Something about margin and padding.
+Padding basically area between the border and the inner image.
+p{
+	border-left: :2px solid blue;
+	width: 50%;  
+	height: 10%;
+    padding: 10px;
+    padding-left: 40px;	
+    margin-top:100px;
+    margin: 20px 40px 500px 100px; /*Top right bottom left*/
+    margin: 0 auto 0 auto; /*Top and bottom 0 and left and right auto*/
+    margin: 0 auto;/* top and botton 0 and left and right auto*/
+    margin: 20px 500px; /*Does the same thing*/
+    float:left; //Align everything towards left.
+}
