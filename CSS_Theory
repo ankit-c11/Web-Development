@@ -242,5 +242,12 @@ body{
    -webkit-transform: skew(-70deg);
    -moz-transform: skew(-70deg);
    transform: skew(-70deg);
-
 }
+
+//Sometinng more about font-
+font-family: We use to set font type like arial.
+font-size: To set the size of the font.
+font-weight- To set the boldness of the font. It goes from 100 to 800. 100 is the least bold and 800 is the boldest.
+line-height- To maintain the gap between two consecutive lines vertically.It goes like 1, 1.5, 2 ..
+text-align- To set the alignment of the text like center
+text-decoration- To set some properties like line through or underline.
