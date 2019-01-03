@@ -14,3 +14,66 @@ There are certain important features of bootstrap like forms, navbar, container 
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
+//While using bootstrap for using the function like collapsing and drop down menu it is mendatory to include JS and jQuery file in the project.
+-----------------jQuery link(Just copy and paste inside body in the end of the code)
+<script
+			  src="http://code.jquery.com/jquery-2.2.4.js"
+			  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+			  crossorigin="anonymous"></script>
+
+
+---------------JS Link(It's mendatory to paste JS script right after jQuery script.)
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+//Grid system basically divides whole web pages into twelve equivalent parts.It's very helpful in arranging pictures equidistant and properly.
+
+For eg:
+
+<div class="container">
+		<div class="row">
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+
+		</div>
+This will show 12 coloumns equidistand and equivalent to each other on a webpage.
+
+In the grid system there are total 12 units.When we alot a coloum to 3 unit by col-lg-3 and there are 4 coloumn there will be 4 coloumn showing in a line because each coloumn will take 3 units and total will be 12units. And if we set col-lg-4 then there will be 3 coloumns in the line (row) and the remaining one will be below the first.
+There's a thing called nested grid in which first we devide a line(12 units) into 4 coloumns and now we can also divide those 1 coloumns into 12 units using nested grid.
+here's the code:
+<div class="container">
+		<div class="row">
+		 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">
+		 	<div class="row">
+           <div class="col-lg-6 orange">First Half</div>
+           <div class="col-lg-6 orange">Other Half</div>
+		  </div>
+		 </div>
+		 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">COL LG 1</div>
+		 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">COL LG 1</div>
+		 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">
+		 	<div class="row">          //Dividing the last coloumn into different parts and assigning each units as 2.So there will be total 6 equal parts.
+		 	<div class="col-lg-2 blue">1</div>
+		 	<div class="col-lg-2 blue">2</div>
+		 	<div class="col-lg-2 blue">3</div>
+		 	<div class="col-lg-2 blue">4</div>
+		 	<div class="col-lg-2 blue">5</div>
+		 	<div class="col-lg-2 blue">6</div>
+		 </div>
+
+		</div>
+		
+        </div>
+	</div>
+
