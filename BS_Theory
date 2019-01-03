@@ -1,4 +1,16 @@
 //First to connect the bootstrap file to our html we have to link .css file to our html.There are many functions or we can say classes in the bootstrap.To use every features of bootstrap we have to include their class.
 Eg: class="btn btn-info btn-lg active"
 There are certain important features of bootstrap like forms, navbar, container etc.
-     
+
+-----------:: Class and id for collapsing the items in NAVBAR and make it into a single drop down button.
+
+   class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"   
+
+-------------------------------And code for drop down menu is: 
+
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
