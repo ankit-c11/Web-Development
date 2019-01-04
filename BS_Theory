@@ -1,3 +1,12 @@
+/////**** If you want your bootstrap styled website to be responsive on mobile then be sure to add the following meta tag to your <head>  element, above the <title>  tag:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
 //First to connect the bootstrap file to our html we have to link .css file to our html.There are many functions or we can say classes in the bootstrap.To use every features of bootstrap we have to include their class.
 Eg: class="btn btn-info btn-lg active"
 There are certain important features of bootstrap like forms, navbar, container etc.
