@@ -3,8 +3,9 @@ Eg: class="btn btn-info btn-lg active"
 There are certain important features of bootstrap like forms, navbar, container etc.
 
 -----------:: Class and id for collapsing the items in NAVBAR and make it into a single drop down button.
-
-   class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"   
+  //////Basically we just need two codes for the hamburger option when the page page shortens.
+  
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  </div>
 
 -------------------------------And code for drop down menu is: 
 
@@ -104,7 +105,7 @@ here's the code:
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
 
-When using a NAVBAR it is necessary to put 70px padding at top.
+---When using a NAVBAR it is necessary to put 70px padding at top.
 <style type="text/css">
 		body{
 			padding-top: 70px;
@@ -112,5 +113,11 @@ When using a NAVBAR it is necessary to put 70px padding at top.
 		}
 	</style>
 	
+	
+//Important----------------
+Attribute------------ backgrond-size:cover; 
+will compress the picture as much possible and try to cover the whole window.
+
+//We just need this class and id to show 
 
 
