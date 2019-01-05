@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY FIRST BLOG</title>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+</head>
+<body>
+	<div>
+	<p cglass="date">january 4 2019</p>
+	<h1>H O P E</h1>
+	<p class="p1">Hope is an optimistic state of mind that is based on an expectation of positive outcomes with respect to events and circumstances in one's life or the world at large. Hope is a good thing. It is the best of things. Hope is something which never dies. Nobody can get to it , nobody can touch it.</p>
+	<p>Of the countless models that examine the importance of hope in an individual’s life, there are two major theories that have gained a significant amount of recognition in the field of psychology. One of these theories, developed by Charles R. Snyder, argues that hope should be viewed as a cognitive skill that demonstrates an individual’s ability to maintain drive in the pursuit of a particular goal.
+	</p>
+	<p>Herth views hope as "a motivational and cognitive attribute that is theoretically necessary to initiate and sustain action toward goal attainment". Establishing realistic and attainable goals in this situation is more difficult, as the individual most likely does not have direct control over the future of their health.</p>
+	</div>
+	<hr>
+	<div>
+	<p class="date">january 3 2019</p>
+	<h1>M U S I C</h1>
+	<p class="p1">
+	Music is an art form and cultural activity whose medium is sound organized in time. In general definitions of music will include common elements such as pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound).
+	</p>
+	<p> Different styles or types of music may emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and vocal techniques ranging from singing to rapping; there are solely instrumental pieces, solely vocal pieces (such as songs without instrumental accompaniment) and pieces that combine singing and instruments. 
+	</p>
+	<p>Music theory encompasses the nature and mechanics of music. It often involves identifying patterns that govern composers' techniques and examining the language and notation of music. In a grand sense, music theory distills and analyzes the parameters or elements of music – rhythm, harmony (harmonic function), melody, structure, form, and texture. Broadly, music theory may include any statement, belief, or conception of or about music. People who study these properties are known as music theorists. Some have applied acoustics, human physiology, and psychology to the explanation of how and why music is perceived.
+	</p>
+	</div>
+</body>
+</html>
+
+//The css file for the above html [blog.css]:
+
+.p1{
+	border-left: 6px solid #bdc3c7;
+	padding-left: 4px;
+}
+body{
+	font-family:"Source Sans Pro";
+	width:60%;
+	border:20px solid #bdc3c7;
+	margin: 0 auto;
+	padding: 15px;
+}
+h1{
+	color:2c3e50;
+	font-family: 'Staatliches';
+}
+.date{
+	text-transform: uppercase;
+	padding-top: 15px;
+	color: #3498db;
+}
+
