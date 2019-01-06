@@ -1,0 +1,10 @@
+//There are basically five types of datatypes in JS
+Numbers: 4,9.3,-10 //There is nothing like double .All treated as numbers.
+Strings: "hello World", "43" //Basically Text
+Booleans: true false //Yes or No
+Null and undefined: null undefined
+
+--If we wanna print somthing like this in the JS- "My name is "Ayush" " then code is: "my name is \"ayush\" "
+ "Ayush" + " Aryan" <---- Adding two strings.
+ "ayush".length O/P- 5  //Will give the length of the string
+ "ayush"[0] O/P- a   //Will give the position of the character in the string
