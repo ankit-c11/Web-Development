@@ -8,3 +8,7 @@ Null and undefined: null undefined
  "Ayush" + " Aryan" <---- Adding two strings.
  "ayush".length O/P- 5  //Will give the length of the string
  "ayush"[0] O/P- a   //Will give the position of the character in the string
+There are some functions like:
+1. console.log() - It'll print in the console
+2. alert- It uses to show at the screen.
+3. prompt- It'll help us to take the value from the user.
