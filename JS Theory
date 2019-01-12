@@ -12,3 +12,130 @@ There are some functions like:
 1. console.log() - It'll print in the console
 2. alert- It uses to show at the screen.
 3. prompt- It'll help us to take the value from the user.
+4. indexOf() -It give the position of the character.It starts with 0. If we are trying to find index of some word that are not         
+                  there, it'll return -1 and this could be used as many things. It is used as the index of something like                                                                                              a.indexOf() or string.indexOf().
+                  For eg: var answer=prompt("Are we there yet?");
+
+                  while(answer.indexOf("yes")== -1){
+	                 var answer=prompt("Are we there yet?");
+         
+                  }
+
+                  alert("Yay! We made it!!!");
+
+/////Some for loop examples:
+
+
+console.log("Print all numbers between -10 and 19");
+for(var i=-10;i<20;i++){
+	console.log(i);
+}
+
+console.log("Print all even numbers between 10 to 40");
+for(var j=10;j<41;j++){
+	if(j%2==0){
+		console.log(j);
+	}
+}
+
+console.log("Print all odd numbers between 300 and 333");
+for(var j=300;j<333;j++){
+	if(j%2!=0){
+		console.log(j);
+	}
+}
+
+console.log("Print all numbers divisible by 5 AND 3 between 5 and 50");
+for(var k=5;k<51;k++){
+     if (k%5==0 && k%3==0) {
+     	console.log(k);
+     }   
+
+}
+
+//Functions: function sayHi(){
+	console.log("Hello");
+	console.log("GOODBye!");
+}
+
+/*Single argument Function*/
+function sayHello(a){
+	console.log("Hello There! " + a);
+}
+
+/*Multiple arguments Fucntion*/
+function sayHellos(a,b,c){
+	console.log("Hello There! " + a);
+	console.log("Hello There! " + b);
+	console.log("Hello There! " + c);
+}
+/*But if in the place of "c" we left it empty it'll show "Hello There! Undefined" */
+
+/*Return keyword used to capture the output given by the function. Like we can also get the output without the *RETURN* keyword but we can't capture the output. If we further wanna use the output in that case we use *RETURN* */
+
+//Function to make the first letter of the statement capital : function c(a){
+	                                                              return a.charAt(0).toUpperCase() + a.slice(1); 
+                                                                }
+        -Slice function used to cut the string from the given argument and then add the remaining part of it.
+        
+    ///    If there is not any string then :
+    function c(a){
+	if(typeof a === "number"){
+		return "That is not a string"
+	}
+	return a.charAt(0).toUpperCase() + a.slice(1); 
+}
+
+--------------- We can also return more than one value but we have to specify it.
+
+// Inside a Function we can only use the keyword return only once and we already used it we can't use it again and there itself function is over at the keyword Return.
+
+//Code for checking even number and returning true.
+function isEven(a){
+	if(typeof(a) != "number"){
+		return "Type a number";
+	}
+   
+   if(a % 2== 0){
+   	return true;
+   }
+	else{
+		return false;
+	}
+}
+
+We can also write it as:
+
+function isEven(a){
+	if(typeof(a) != "number"){
+		return "Type a number";
+	}   
+   	return a % 2 == 0;
+   }
+   
+// Factorial Program Code  --
+function a(b){
+    var result=1;
+
+	for(var i=1;i<=b;i++){
+        result= result*i ;
+	}
+
+	return result;
+
+}
+
+
+//Change all '-' in the string to '_' . We can use it by replace() function. There is a proper syntax to write that replace function.
+Likeee -----     var myString= "Hello-World";
+                 myString.replace(/-/g , "_");        ///   In the code inside those two "/ /" we have to write what we want to cahnge and after comma we have to write the what will gonna be the new change or the replacing word.
+                 
+                 As a function eg.   function a(b){
+                                      var newS = b.replace(/-/g , "_");
+                                     return newS;
+                                      }
+                                      
+                                      
+                                     
+
+
