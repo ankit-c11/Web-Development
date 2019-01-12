@@ -137,5 +137,80 @@ Likeee -----     var myString= "Hello-World";
                                       
                                       
                                      
+///////////////////////////////
+var num=8;
+function a() {
+  num+=1;
+  if(num%5==0){
+  	return true;
+  }
+else {
+	return false;
+}
+
+}
+
+num+=1;
+///////////////// This code has to return false but it returns true because num value is 10. Does'nt matter whether we are incrementing the value inside the function or outside it also it does'nt matter where we declared the function. Since we are using the function after all the increment of number since it is giving true. 
+
+
+//setInterval(anotherFunc,interval): It's a function which will repeat another function after ever interval and it's interval is in miliseconds. Like 
+----
+function sing(){
+	console.log("Ayush");
+}
+
+setInterval(sing,1000);
+
+This will print output of sing function after ever 1000 miliseconds. 
+O/P- ayush ayush ayush . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+While using setInterval it gives a number and that number is used as stoping that process by the process clearInterval()
+
+////Arrays---
+Functions:
+1.push()- It'll return the number of items in the arrays and used to add a value in the given numbers of values. 
+2.pop()- It returns the last item in the array and removes it from the array. So when we recheck the array values then last value won't be there.
+3.unshift()-It used to add something as the first item of the array.
+4.shift()- It used to remove the first item of the array.It also returns the first item so we can also save it in seperate variable.
+5.indexOf()- It'll find the index of the particular string or value in the given number of values in the array.
+6.slice()- It takes two arguments. It is used to seperate some particular values from a group of values in the array. Like in the given names we want to seperate 3 names of the same city, we'll use slice and save it to a different variable.
+e.h- var fruits=["banana","apple","mango","pineapple"];
+     var a=fruits.slice(1,3);
+     
+     If we wanna just copy and pase the entire array then:
+     var fruits=["banana","apple","mango","pineapple"];
+     var a=fruits.slice();
+    
+ ///Nested Arrays:--
+ var names=[["Ayush","Aryan","Bittu"],
+           ["Ankit","Rahul"],
+           ["Utkarsh","Salman"]]; 
+names[2] [1];
+O/P- "Salman"
+
+
+////Sample JS Programme: Todo List (Adding things to array then printing it)
+
+var input=prompt("What would you like to do?");
+var todo=[];
+
+
+while(input!="quit"){
+
+	if(input=="new"){
+	var a=prompt("Enter a new todo");
+	todo.push(a);
+}
+else if(input=="list"){
+	console.log(todo);
+}
+
+input=prompt("What would you like to do?");
+}
+console.log("Okay, You quit the app");
+     
+
+
 
 
