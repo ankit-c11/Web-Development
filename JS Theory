@@ -175,9 +175,13 @@ Functions:
 4.shift()- It used to remove the first item of the array.It also returns the first item so we can also save it in seperate variable.
 5.indexOf()- It'll find the index of the particular string or value in the given number of values in the array.
 6.slice()- It takes two arguments. It is used to seperate some particular values from a group of values in the array. Like in the given names we want to seperate 3 names of the same city, we'll use slice and save it to a different variable.
-e.h- var fruits=["banana","apple","mango","pineapple"];
+e.g- var fruits=["banana","apple","mango","pineapple"];
      var a=fruits.slice(1,3);
-     
+7.splice()-This will specifically make a cut and remove specific element from an array.
+eg.  list.splice(index,1);       ///But if we write list.splice(index,10); This will delete 10 items following that index.
+
+
+
      If we wanna just copy and pase the entire array then:
      var fruits=["banana","apple","mango","pineapple"];
      var a=fruits.slice();
@@ -210,7 +214,107 @@ input=prompt("What would you like to do?");
 }
 console.log("Okay, You quit the app");
      
+///////
+Arrays Problems:
+
+var colors = ["Red","Blue","Green","Yellow","Orange"];
+// for(var i=0;i<colors.length;i++){
+// 	console.log(colors[i]);           //For Loop which is printing every color
+// }
+
+/*forEach() function -
+colors.forEach(function(){        //This function will be called by each element.
+                                  //forEach basically calls function for each element in the array.	
+                                  //When we pass any arguments in this function it calls the values of the array.
+})
+*/
+
+colors.forEach(function(a) {
+	console.log("Hey " + a)
+})
+
+/*  O/P-
+Hey Red
+Hey Blue 
+Hey Green 
+Hey Yellow 
+Hey Orange   */
+
+--------------------------
+var colors=["red","blue","green","yellow","orange"];
+
+function abc(color){                                 
+	console.log("************");
+	console.log(color);
+	console.log("************");
+}
+
+O/p-----
+colors.forEach(abc);                             ///Not to put parenthesis in this function because it's already declared
+************ 
+red 
+************ 
+************
+blue 
+************ 
+************
+green 
+************ 
+************ 
+yellow 
+************ 
+************ 
+orange 
+************
+
+////One more problem:    
+
+var a=[1,2,3,4,5,6,7,8,9];
+
+a.forEach(function(b){
+	if (b%2==0) {
+		console.log("This is even number " + b)
+	}
+})
+
+O/P--
+This is even number 2
+This is even number 4
+This is even number 6
+This is even number 8
+
+////////////////A simple todo list which add items when we add it and it adds it in the array and delete the item.
 
 
+var input=prompt("What would you like to do?");
+var todo=[];
 
+while(input!="quit"){
+if(input=="new"){
+	var a=prompt("What you want to Todo list");
+	todo.push(a);
+	console.log("Add a todo");
+}
 
+else if(input=="list"){
+	console.log("*******");
+	
+	todo.forEach(function(z , index){
+		console.log( index + " : " + z);
+	}) 
+	console.log("*******");
+}
+
+else if(input=="delete"){
+	var i=prompt("Give index to delete");
+	todo.splice(i,1);
+	console.log("Delete a todo");
+
+}
+
+var input=prompt("What would you like to do?");
+
+}
+
+console.log("Okay! You quit the app. ");
+-------------------------------------------------------------
