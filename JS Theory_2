@@ -1,0 +1,52 @@
+//Some JS code examples:---
+1. printReverse Function-- 
+
+function printReverse(a){
+   for(var i= a.length-1; i>=0 ; i--)
+   console.log(a[i]);
+}
+
+var array=[1,2,3,4,5,6];
+printReverse(array);
+
+
+2.isUniform() - If all elements are same return true otherwise false.     //// Basic logic behind it is first we save the first element as a variable and then checks every element if it is equal to the first element(variable) or not. If it is not equal we will return false otherwise true.
+
+
+function isUniform(arr){
+	var first = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(arr[i] !== first){
+			return false;
+		}
+	}
+	return true;
+}
+
+3.sumArray()- It will sum each element in the array and then give the total.
+function sumArray(a){
+	var sum=0;
+   a.forEach(function(element){
+     sum+= element;
+
+   })
+
+   return sum;
+}
+
+4.mx() - It'll return the maximum value in the array.         ///Baisc logic is to set the first element in a variable and then check every other element as it is bigger or not. If we find any bigger element we will save that bigger element in that variable and in the end return that variable.
+
+
+function mx(a){
+	var b=a[0];
+	for(var i=1; i< a.length ; i++){
+		if(a[i]>b){
+			b=a[i];
+		}
+	}
+	return b; 
+}
+
+
+
+
