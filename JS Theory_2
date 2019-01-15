@@ -47,6 +47,141 @@ function mx(a){
 	return b; 
 }
 
+////////////////////////////////////////////
+-Datastructure: Object- It is created using curly braces not with parenthesis.
+var person = {
+   name: "Travis",
+   age:21 ,
+   city:"LA"
+
+
+};
+
+console.log(person["name"]);
+console.log(person.name);   //Another way to write and also we can not use dot notation if the property starts with a number.
+                            //Like we can not use : object.1blah // invalid
+			                            object["1blah"] //is valid
+
+//We also can not use dot notation for property names with spaces
+object.fav color //invalid
+object["fav color"] // Valid
+
+//////////Updating data in an object:
+var person = {
+name : "Travis" , 
+age : 21 ,
+city : "LA"
+
+};
+
+person.age += 1;               // or person["age"] += 1 ;
+person.city= "London";
+
+///////Adding data in the object:
+var person{};        OR   var person= new Object();
+
+person.name="Travis";
+person.age=21;
+person.city="LA";
+
+
+////////////////////////////////////////
+// Objects inside arrays.
+
+var posts = [
+	{
+       title: "Cats are mediocre",             //Post index 0 will give this object.
+       author: "Colt" ,
+       commments: ["Awesome post" , "terrible post"]
+
+	},
+    {
+       title: " Cats are actually awesome",       //Nested objects
+       author: "Cat luvr" , 
+       commments: ["<3","Go to hell I hate you"]
+
+    }
+ ] ;
+
+
+//Getting data -
+
+post[0].title; 
+//////////////////////////////
+*Curly Braces tells us its object and square bracket tells that it is an array.*
+//////////////////////////////
+arrays works through index.If we have to find something we have to give index. In this case objects are very helpful.
+
+
+---  "\""  "\""   <--- This is the way to put double quotes on something which is non-string.
+
+///////Write a code that prints each movie which is watched along with the rating.
+using arrays and objects.
+
+var movie= [ {title: "Titanic", Rating: 5, hasWatched: true },
+              {title: "Robot", Rating: 4 , hasWatched: false},
+              {title: "Twilight", Rating: 3 , hasWatched: true}
+            ] 
+
+movie.forEach(function(a){
+     for(var i=0;i<movie.length-1;i++){
+     if(a.hasWatched == true){
+     	console.log("You have watched " + "\"" + a.title +"\"" +" Rating " +  a.Rating);
+     }
+   }
+
+})
+
+------------OR----------
+movie.forEach(function(b){
+   var result="You have ";
+   if(b.hasWatched==true){
+       result += "watched ";
+   }
+   else{
+   	result += "not seen ";
+   }
+   result += "\"" + b.title +"\"" +" Rating " +  b.Rating ;
+   console.log(result);
+
+})
+
+
+//////////////////////////////////////////////////////////////
+//When we add a function as a property in the object it calls as methods.
+ var a = {
+     name : "chuck",
+     age : 12,
+     isCool: false,
+     friends: ["david", "tina"],
+     add: function(x,y){
+     	return x+y;
+     }
+ }
+
+
+ a.add(3,5);
+ //O/P- 5
+ 
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+						    
+						    
+
 
 
 
