@@ -1,0 +1,83 @@
+////Simple webpage game 
+--------HTML Code---------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Score Game</title>
+  <style type="text/css">
+  	.color{
+  		color:red;
+  	}
+  </style>
+</head>
+<body>
+<h1><span id="score1">0</span> to <span id="score2">0</span></h1>
+
+
+
+<p>Playing to: <span id="zz"> 0 </span> </p>
+<input type="number" id="limit" name="">
+<button id="p1">Player 1 </button>
+<button id="p2">Player 2 </button>
+<button id="reset">Reset </button>
+
+
+
+
+<script type="text/javascript" src="file.js"></script>
+</body>
+</html>
+
+
+---------------JS code-----------------------
+var p1=document.querySelector("#p1");
+var p2=document.querySelector("#p2");
+var input=document.querySelector("#limit");
+var reset=document.querySelector("#reset");
+var zz=document.querySelector("#zz")
+var p1score=0;
+var p2score=0;
+var firstScore=document.querySelector("#score1")
+var secondScore=document.querySelector("#score2")
+var h1=document.querySelector("h1");
+var gameOver=true;
+var highScore=Number(input.value);
+
+p1.addEventListener("click",function(){
+if(gameOver){
+    p1score+=1;
+    firstScore.textContent=p1score; //will change the score accoding to p1score
+    if(p1score==highScore){
+    	firstScore.classList.toggle("color")
+    	gameOver= false;
+    }
+    }            
+});
+
+p2.addEventListener("click",function(){
+if (gameOver) {
+	p2score+=1;
+	secondScore.textContent=p2score;
+	if (p2score == highScore) {
+		secondScore.classList.toggle("color")
+		gameOver = false;
+	}
+}
+} );
+
+reset.addEventListener("click",function (){
+     firstScore.textContent=0;
+     secondScore.textContent=0;
+     p1score=0;
+     p2score=0;
+     zz.textContent=0;
+     input.value=0;
+     firstScore.classList.remove("color");
+     secondScore.classList.remove("color");
+     gameOver = true;                  //It turns gameOver again to true
+})
+
+input.addEventListener("change",function(){
+    zz.textContent=Number(input.value);
+
+})
