@@ -1,0 +1,141 @@
+Selectors:
+1.
+
+
+Get the first <p> element in the document:
+document.querySelector("p");
+Example
+
+Get the first <p> element in the document with class="example":
+document.querySelector("p.example");
+Example
+
+Change the text of an element with id="demo":
+document.querySelector("#demo").innerHTML = "Hello World!";
+Example
+
+Get the first <p> element in the document where the parent is a <div> element.
+document.querySelector("div > p");
+Example
+
+Get the first <a> element in the document that has a "target" attribute:
+document.querySelector("a[target]");
+Example
+
+This example demonstrates how multiple selectors work.
+
+Assume that you have two elements: a <h2> and a <h3> element.
+
+The following code will add a background color to the first <h2> element in the document:
+<h2>A h2 element</h2>
+<h3>A h3 element</h3>
+
+document.querySelector("h2, h3").style.backgroundColor = "red";
+
+However, if the <h3> element was placed before the <h2> element in the document. The <h3> element is the one that will get the red background color.
+<h3>A h3 element</h3>
+<h2>A h2 element</h2>
+
+document.querySelector("h2, h3").style.backgroundColor = "red";
+
+
+
+
+We can manipulates text content by declaring a class and then joining that class to the required element.
+var a= document.querySelector("p");
+p.classList.toggle("style");
+
+classList.add and classList.delete
+
+//////////////////
+setAttribute  used to set attribute
+setContent
+
+logo.style.width="100px";
+logo.style.border="2px solid purple";
+
+a.textContent    //Tells you about the text it is containing
+a.innerHTML      //Tells everything in the HTML.
+
+a.getAttribute("href")                 and a.textContent  -- To get the content
+
+setContent
+
+////////////////////////////////////////////////
+element.addEventListener(type,functionToCall); 
+var a=document.querySelector("button");
+var b=document.querySelectorAll("p")[0];
+a.addEventListener("click",function(){
+   b.textContent="Somebody clicked the buttons";});
+  
+Sample:
+var a = document.querySelector("button");
+var b = document.querySelector("h1");
+a.addEventListener("click",function(){
+  console.log("Hello World!");
+  b.textContent= "Welcome!";
+  b.style.background="red";  });
+  
+  ///////////////Code to change the color of the webpage when we click on the button basically by adding event listener:
+var a = document.querySelector("button");
+var b = true;
+a.addEventListener("click",function(){
+    if(b){
+	document.body.style.background="red";
+    b=false;
+	}
+else{
+	document.body.style.background="white";
+	b=true;
+}
+})
+///////////////////////////////////////
+We can also do it with adding css class and toggle it with the toggle attribute of classList.
+<style type="text/css">
+  .red{
+    background: red;
+  }
+
+  </style>
+var a = document.querySelector("button");
+var b = true;
+a.addEventListener("click",function(){
+	document.body.classList.toggle("red");    
+})
+//////////////////////////////////////////////////////////
+
+addEventListener("change",function(){}) --There is also an action- "change" - It'll act whenever there is any change.
+///////////////////////////
+input.value  will give the value inside that input tag in html.
+
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
