@@ -108,9 +108,49 @@ addEventListener("change",function(){}) --There is also an action- "change" - It
 ///////////////////////////
 input.value  will give the value inside that input tag in html.
 
+addEventListener("mouseover",function(){})
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+When you hover over some list its color will change .Two actions are "mouseover" and "mouseout"
+---HTML Code---
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.b{ text-decoration: line-through;
+			opacity: 0.5;
 
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li id="a">Ayush</li>
+		<li>Aryan</li>
+		<li>Bittu</li>
+	</ul>
+<script type="text/javascript" src="ayush.js"></script>
+</body>
+</html>
+
+
+---JS Code--
+var a = document.querySelectorAll("li");
+
+for(var i=0; i<a.length;i++){
+a[i].addEventListener("mouseover",function(){
+  this.style.color="red";
+});
+
+a[i].addEventListener("mouseout",function(){
+ 	this.style.color="black";
+ })
+a[i].addEventListener("click",function(){
+	this.classList.toggle("b")
+})
+}
 
 
  
