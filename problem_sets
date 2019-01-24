@@ -1,0 +1,119 @@
+// Array problem set
+// Print Reverse of an Array
+function printReverse(array){
+	for(var i = array.length - 1; i >=0; i--){
+		console.log(array[i]);
+	}
+}
+
+// Check for Uniform Array
+function isUniform(a){
+	var first = a[0];
+	var i = 0;
+	do{
+		i++;
+	}
+	while(a[i] == first)
+		return (i == a.length);
+}
+// Sum Array
+function sumArray(b){
+	var sum = 0;
+	for(var i = 0; i < b.length; i++ ){
+		sum+= b[i];
+	}
+	return sum;
+}
+// MAX function
+function max(nums){
+	var m = nums[0] ;
+	for(var i = 1; i < nums.length; i++){
+		if(nums[i] > m){
+			m = nums[i];
+		}
+	}
+	return m;
+}
+
+// Function problem set
+// isEven
+function isEven(x){
+	if(x % == 0){
+		return "true";
+	}
+	else
+		return "false";
+}
+// Factotial
+function factorial(x){
+	var f = 1;
+	if (x > 0){
+		for (var i = 1; i <= x; i++){
+			f*= i;	 
+		}
+	}
+	return f;
+}
+// Kebab to Snake
+function kebabToSnake(string)
+{
+	var str = string.replace(/-/g, "_");
+	return str;
+}
+
+var n = -10;
+while(n<20){
+	console.log(n);
+	n++;
+}
+var a = 10;
+while (a <= 40){
+	console.log(a);
+	a+= 2;
+}
+var b = 300;
+while (b <= 333){
+   if(b%2 == 1) 
+   	{
+   		console.log(b);
+   	}
+	b++;
+}
+var num = 5;
+while (num <= 50){
+	if(num % 3 == 0 && num % 5 == 0){
+		console.log(num);
+	}
+	num++;
+}
+// Annoy-o-matic
+var answer = prompt("Are we there yet?");
+while (answer.indexOf("yes") == -1)
+	{
+		answer = prompt("Are we there yet?");
+	}
+alert("yay, we made it finally");
+// For loop
+var name = prompt("enter your name : ");
+for (var i = 0; i < name.length; i++)
+{
+	console.log(name[i]);
+}
+// For loop problem set
+for(var i = -10; i < 20; i++){
+	console.log(i);
+}
+for(var j = 10; j <= 40; j++){
+	if(j % 2 ==0){
+		console.log(j);
+	}
+ for(var k = 300; k <= 333; k++){
+	if(k % 2 == 1){
+		console.log(k);
+	}
+}
+for(var a = 5; a <= 50; a++){
+	if(a % 3 == 0 && a % 5 == 0){
+		console.log(a);
+	}
+}
