@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo list</title>
+</head>
+<body>
+	<h1>Todo List</h1>
+	<ol>
+		<li>"new" - Add a Todo</li>
+		<li>"list" - List Existing Todos</li>
+		<li>"delete" - Delete a record</li>
+		<li>"quit" - To Exit</li>
+	</ol>
+	<script
+  	src="http://code.jquery.com/jquery-3.3.1.js"
+  	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
+
+// the javascript file to be saved as "todo.js"
+var todos = [];
+do	{
+		var action = prompt("What would you like to do?");
+		if(action == "new")
+		{	var newTodo = prompt("Enter a new todo");
+			todos.push(newTodo);
+			console.log(newTodo + " added to the todos.");
+		}
+		if(action == "list")
+		{	
+			console.log("************");
+			todos.forEach(function(a){
+				console.log(todos.indexOf(a) + ": " + a);
+			})
+			console.log("************");
+		}
+		if(action == "delete"){
+			todos.splice(prompt("Enter the index of todo to delete"), 1);
+			console.log("Todo removed");
+		}
+	}
+while(action != "quit")
+
+console.log("OK, YOU QUIT THE APP.");
