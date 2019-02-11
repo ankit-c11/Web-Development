@@ -159,6 +159,15 @@ a[i].addEventListener("click",function(){
 In a programe we can put div inside of a div, change the color padding everything in the inside div and then give it proper dimension using the outer div. Like if we want to put a color box on the centre of the webpage then we will save it inside the div and give div margin 0 auto means 0 on the top and bottom and auto on the left and right. This will take the colored box in the bottom.
 /////////////////////
 Whenever you want to change something in a preexisting statement just put in the span. for eg. My age is "02". If we want to change the age jyst put it in the span.  Change the text by a."textContent"= "" ; 
+////////////////////////////////////
+//Creating a funciton to generate a random color
+	//math.random is a function which will create a random number
+	//If we want random number below six we'll write  "Math.random() * 6"
+	//If we want a random number above 1 and less than 6 we'll write Math.random *6 +1
+    // Math.floor(Math.random()*6) Will generate random number(in whole number without decimal) between 0 and 6
+///////////////////////////////
+
+
  
   
   
