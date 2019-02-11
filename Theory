@@ -166,10 +166,11 @@ Whenever you want to change something in a preexisting statement just put in the
 	//If we want a random number above 1 and less than 6 we'll write Math.random *6 +1
     // Math.floor(Math.random()*6) Will generate random number(in whole number without decimal) between 0 and 6
 ///////////////////////////////
-
-
- 
-  
+ Transition property:   It is property to tell css how to animate transistions like changing of fonts
+         ---->      transition: all 2.0s  It will take 2 seconds to fade
+ In many browsers transition properties do not work. So to get it work there we use
+ -webkit-tranition: background 0.6s;   for browsers like safari
+ -moz-transition: background 0.6s; it is for mozilla
   
   
   
