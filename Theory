@@ -1,1 +1,16 @@
+In jQuery it is very easy to select an element and change its properties like in js fist we select an element by querySelectorAll() and then change its properties like.
+var a =document.querySelectorAll("h1");
+a.style.backgroundColor("pink")
+------But in jQuery we use "$" to select an item and .css to change its properties:
+$("h1").css("color","pink");
+--------OR------ we can add group of properties like- 
+var styles={background:"pink",
+  border : 2px solid red,
+  fontWeight: "bold"
+};
+$("h1").css(styles);   //And it'll change all its properties
+We can also change properties according to class or ids or tag name.
+$("#a").css("color","red");
+
+
 
