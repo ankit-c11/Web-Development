@@ -11,6 +11,18 @@ var styles={background:"pink",
 $("h1").css(styles);   //And it'll change all its properties
 We can also change properties according to class or ids or tag name.
 $("#a").css("color","red");
+ /////////////////////////////////////////  We have to use camel case in writing attributes like font-size(in CSS) and fontSize(in jQuery)
+We can select all the element of one kind at a time like slection of all the li tags
+$("li").css({
+  fontSize: "10px",
+  border: "3px dashed purple",
+  background:"rgba(89, 45, 28, 0.5)"
+});
 
-
-
+//////////////////////////////////////
+When in js we have to make many elements
+var a=document.querySelectorAll("li");
+for(var i=0;i<a.length;i++){
+ a[i].style.backgroundColor("red");
+};
+///////////////////
