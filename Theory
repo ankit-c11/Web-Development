@@ -82,6 +82,22 @@ $("ul").html("<li> Hey </li><li> What is your name</li>"); //It'll change the li
     .toggleClass()   $("ul").last().toggleClass("class2");
 
 
+---Methods:
+1. .click() - $("#submit").click(function(){console.log("Another Click");});
+             $("button").click(function(){console.log("Clicked")});
+  We can also write css code using click to add more properties
+          $("h1").click(function(){$(this).css("background","purple")});    //We use JS code here along with jQuery and this used to select this item.
+          ** We can take input name from a button and print it when someone click on it.
+          $("button").click(function(){ var a= $(this).text();  console.log("You clicked " + a)});  //It's saving the current value in the tag and then printing it.
+2. .keydown() - When the key is pressed down 
+   .keyup()  - when the key id comes up after pressing it down
+   .keypress() - It indicates that the character entered
+   keydown and keyup prive a code indicating which key is pressed while keypress indicates which character was entered.For example a lowercase 'a' will be reported as 65 by keydown and keyup but as 97 by keypress. An uppercase 'A' is reported as 65 by all events. Because of this distinction which catching special keystrokes such as arrow keys, .keydown() or .keyup() is a better choice.
+   
+
+
+
+
 
 
 
