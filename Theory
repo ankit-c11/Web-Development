@@ -26,6 +26,27 @@ for(var i=0;i<a.length;i++){
  a[i].style.backgroundColor("red");
 };
 ///////////////////
+Some examples of selectors:
+Select all divs and give them purple color
+$("div").css({background:"purple"});
+    OR
+$("div").css("background","purple");
+
+Select div with calss "highlight" and make them 200px wide
+$("div.highlight").css("width","200px");
+    OR
+$(".highlight").css("width","200px");
+
+Select the div with the id "third" and give it an orange border
+$("div#third").css("border","orange 2px solid");
+        OR
+$("#third").css("border","2px solid orange");
+
+Select the first div only and change its font color to pink
+$("div:first-of-type").css("color","pink");   //This is css slector type
+    OR
+$("div:first").css("color","pink");  //This shortcut in only in jQuery and it's a bit slower
+
 
 
 
