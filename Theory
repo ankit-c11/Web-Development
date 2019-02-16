@@ -46,6 +46,40 @@ Select the first div only and change its font color to pink
 $("div:first-of-type").css("color","pink");   //This is css slector type
     OR
 $("div:first").css("color","pink");  //This shortcut in only in jQuery and it's a bit slower
+ /////////////////////////////////////////////////////////////////////
+ 
+ Functions:  
+ 1-  .text() - It'll give all the text component in it.   $("h1").text();
+         It also changes text e.g.  $("h1").text("New Text");
+ 2-  .html() - It'll get the html element, like it corresponds to inner html and we can change its content like textContent().
+       $("ul").html();
+"
+   <li>Skittles</li>
+   <li>Starburst</li>
+   <li>Twix</li>
+ "
+$("html").html("<li> Hey </li><li> What is your name</li>"); //It'll change the whole html content of the page
+O/P- Only--- Hey
+             What is your name
+$("ul").html("<li> Hey </li><li> What is your name</li>"); //It'll change the li content or we can say html content
+ O/p- Everything on the webpage would be same as it was and in the list it will change its content
+********* If we use .text() - It will the just show the text or we can say whole string along with all the tags and commands of the html. So In order to add list or ul or link<a> It is must to use .html() it order to show it.
+
+3-  .attr() -- (Attribute ) $("img").attr("width","500px") 
+   It just work as css but we only can change attribute.
+   For selecting first image in group of images
+   $("img:first-of-type").attr("src","index.jpeg")
+   For selecting the last image.
+   $("img").last().attr("src","abc.jpg")     //last function will give the last element
+   
+4- .val() --  It give the value of the first element in the set of the matched element. It's like .value
+   $("input").val();   // It will give the value  
+   We can also change the value using this function
+   $("input").val("abc");
+   
+ 5. .addClass()
+    .removeClass()   $("ul").removeClass("class1");
+    .toggleClass()   $("ul").last().toggleClass("class2");
 
 
 
