@@ -116,7 +116,32 @@ $("input").keypress(function(Event){if(Event.which==13){alert("You hit Enter");}
  click() will only add clicklistener only present at that time on the page byt on the on("click") will add event to the future possible element on the page which is not at the page right now but probably will be written by the user. 
    
    
-   
+ ///////////////////////////////////////////////////////////////////////////////
+ *Effects:
+ 1-    .fadeOut()  We can select the time interval for the fading.  
+   $("button:first-of-type").on("click",function(){$("div").fadeOut(1000);}); // The first button when pressed then the div will fade out in the time interval of 1second. 
+   *** Wehn we write the code like this.
+   $("button:first-of-type").on("click",function(){$("div").fadeOut(1000);
+      console.log("ABC");});   // It will immediately print cosnole and fade div away but if we want to print console after the fading is done then we have to call a function like when the fading ends then the function calls.
+  ---- $("button:first-of-type").on("click",function(){
+       $("div").fadeOut(1000);
+         });
+  
+  -----$("button:first-of-type").on("click",function(){$("div").fadeOut(1000,function(){$(this).remove()});});
+    Some functions are .fadeIn()  .fadeOut()   .fadeToggle()
+    //////////////////////////////////////////////
+    slideDown()  slideUp()  slideToggle()
+    First the item remains hidden when the function runs items apperas as sliding up or down.
+    $("button:first-of-type").on("click",function(){$("div").slideToggle(1000);})
+    
+    
+    
+    
+    
+    
+    
+    
+
    
    
    
