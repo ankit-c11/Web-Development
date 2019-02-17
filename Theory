@@ -94,9 +94,36 @@ $("ul").html("<li> Hey </li><li> What is your name</li>"); //It'll change the li
    .keypress() - It indicates that the character entered
    keydown and keyup prive a code indicating which key is pressed while keypress indicates which character was entered.For example a lowercase 'a' will be reported as 65 by keydown and keyup but as 97 by keypress. An uppercase 'A' is reported as 65 by all events. Because of this distinction which catching special keystrokes such as arrow keys, .keydown() or .keyup() is a better choice.
    
+E.G.-  $("input").keypress(function(){console.log("You pressed a key");});  //It'l give output after every key pressed
 
+***********We can determine the key because every key has its unique keyCode in the JS***********
+$("input").keypress(function(Event){if(Event.which==13){alert("You hit Enter");}});
+//It'll give output whenever "ENTER" key is pressed. "13" is the key code for enter.
 
-
+3. on() -It also works as event listener. We can add event click or double click or keypress
+  After writing on we have to write the type of event like click and then write the funciton
+  e.g. $("button").on('dblclick',function(){alert("Double Click");});
+        $('a').on('dragstart',function(){console.log("Drag Started");});
+        $("input"[type="text"]).on("keypress",function(){alert("Key Press in an input");});
+   --If we have three same type of tags like three paragraph tags or three heading tags and we have t select only on tag an change its color then 
+   $("h1").on("click",function(){$(this).css("color","purple");}); 
+   
+****** There are two events in the on fucntion - "mouseenter" and "mouseleave" ******
+ "mouseenter" is used when curser hover over button and "mouseleave" when curser leaves the button It'll show the output
+ 
+ 
+ *****////// Difference between click() and on("click")  
+ click() will only add clicklistener only present at that time on the page byt on the on("click") will add event to the future possible element on the page which is not at the page right now but probably will be written by the user. 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 
 
