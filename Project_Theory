@@ -1,0 +1,7 @@
+<ul>
+    	<li><span> x </span> Go To Portions Class</li>  
+    	<li><span> X </span> Buy New Robes</li>
+    	<li><span> X </span> Visit Hagrid</li>
+    </ul>
+    
+     //If we want to add any delete button then we wwill add it in span just like as it is shown and when we add eventListener to the span we can delete the whole li.
