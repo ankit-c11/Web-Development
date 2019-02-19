@@ -5,3 +5,11 @@
     </ul>
     
      //If we want to add any delete button then we wwill add it in span just like as it is shown and when we add eventListener to the span we can delete the whole li.
+
+** If we want to check the color then we have to use rgb method -
+   if($(this).css("color")=="rgb(128, 128, 128)"){console.log("Matched!");}
+   
+
+
+
+
