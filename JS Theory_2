@@ -162,26 +162,4 @@ movie.forEach(function(b){
 
  a.add(3,5);
  //O/P- 5
- 
- 
-
-
-
- 
-
- 
-
-
-
-
-
-
-
-
- 
-						    
-						    
-
-
-
-
+  
