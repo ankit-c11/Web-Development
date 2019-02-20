@@ -9,6 +9,66 @@
 ** If we want to check the color then we have to use rgb method -
    if($(this).css("color")=="rgb(128, 128, 128)"){console.log("Matched!");}
    
+  
+ -- $("span").click(function(event){
+	alert("Clicked on span");
+	event.stopPropagation();
+})
+$("span").click(function(event){
+	alert("Clicked on span");
+	event.stopPropagation();
+})
+
+$("ul").click(function(){
+	alert("Clickd on ul");
+})
+
+stopPropagation() - It will stop any further event after it. Line we already have some more code written with the click function then it will stop it.
+                    Just like the above code it will not procede any further code.
+
+** .on("click,function(){}); ** It is very useful function when you are adding any future element and then doing something on it
+
+$("input[type='text']").keypress(function(event){
+	if(event.which ==13){              //13 is the key code for enter and which method is like "this" method.
+		//Grabbing new todoText from input
+		var todoText=$(this).val();
+		//create a new li and add to ul
+		$("ul").append("<li><span>X</span> "+ todoText + "</li>");
+		$(this).val("");     //This will give empty string to the input
+
+	}
+
+});
+
+
+
+// Check off specific TOdos By Clicking
+$("ul").on("click","li",function(){    //We use ul becuase we can only add listener to elements which are already there but in this create we are creating future elements and are trying to add listener to it so for it we have to use ul instead of li.
+   $(this).toggleClass("completed");  // Li here tells that the li inside of the ul is clicked do this funciton
+});
+
+////////////////////////
+li:nth-child(2n){       //This will make every second li color red
+	background: red;
+}
+
+////////////////
+input:focus{               //focus is very useful in case of applying specific quality to the element in which we are focussing on right now.
+	background: white;
+	border: 3px solid blue;
+	outline: none;
+} 
+//////////////////////////
+Linear Gradient is an exciting property and we can add different color styles on our webpage by just copying the code from the website of uigradient css code
+and pasting it in the css file inside body tag.
+
+
+///////////////
+ul{
+	list-style: none;     /*It will remove the bullet points from the li */
+}
+////////////
+
 
 
 
