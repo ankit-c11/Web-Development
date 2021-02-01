@@ -25,20 +25,20 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
       - A back button on top left corner, that takes the user back to the genre detail screen.
       - An info button on top right corner, that displays the album information to the user, when clicked.
       - The main screen shows:
-       - The album cover image.
-       - The album title.
-       - The artist and the number of plays from the album.
-       - The other genres this album belong to, can be swiped if exceeds the screen width.
-       - List of all the tracks in the album, with track title, artist name and album cover image.
+         - The album cover image.
+         - The album title.
+         - The artist and the number of plays from the album.
+         - The other genres this album belong to, can be swiped if exceeds the screen width.
+         - List of all the tracks in the album, with track title, artist name and album cover image.
     - ### Artist Detail Screen
       - A back button on top left corner, that takes the user back to the genre detail screen.
       - An info button on top right corner, that displays the artist information to the user, when clicked.
       - The main screen shows:
-	- The artist's image.
-	- The artist's name.
-	- The number of plays for the artist and their follower count.
-	- The other genres this artist has songs in, can be swiped if exceeds the screen width.
-        - List of all the tracks by the artist, with track title, artist name and album cover image.
+         - The artist's image.
+	 - The artist's name.
+	 - The number of plays for the artist and their follower count.
+	 - The other genres this artist has songs in, can be swiped if exceeds the screen width.
+         - List of all the tracks by the artist, with track title, artist name and album cover image.
 
 - ### Assumptions
 
