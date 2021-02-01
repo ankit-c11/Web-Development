@@ -19,8 +19,8 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
         - **Albums**: If selected, lists all the albums having songs of the selected genre.
         - **Tracks**: Lists all the tracks under this genre.
 	   
-	 > 
-	 For all the three tabs available, a different layout for presenting the track/album/artist title and the corresponding cover image has been designed.
+
+	 :point_right: For all the three tabs available, a different layout for presenting the track/album/artist title and the corresponding cover image has been designed.
 	 
     - ### Album Detail Screen
       - A back button on top left corner, that takes the user back to the genre detail screen.
