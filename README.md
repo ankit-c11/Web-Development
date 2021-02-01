@@ -7,13 +7,11 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 
     - ### Home Screen
       - The home screen shows the top genres to the user and the list expands to show all the available genres.
-      - To make things convinient for the users, *a _search bar_ has been added* so that users can directly search
-	for their choice of genre.
+      - To make things convinient for the users, *a _search bar_ has been added* so that users can directly search for the genre of their choice.
 	
 	:point_right: Clicking on any genre displays a new genre detail screen to the user.
     
     - ### Genre Detail Screen
-	 This screen shows the following:
       - The name of genre selected on the top left corner.
       - An info button at top right corner, that shows the information about the genre, when clicked.
       - Three tabs, *Artists, Albums and Tracks*, only one of which can be selected to be on display at a time.
@@ -24,25 +22,23 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	 > For all the three tabs avaiable, a different layout for presenting the track/album/artist title and the corresponding cover image has been designed.
 	 
     - ### Album Detail Screen
-	This screen has the tracks from the chosen album, tracks belonging to the initially chosen genre. The features are:
-	- A back button on top left corner, that takes the user back to the genre detail screen.
-	- An info button on top right corner, that displays the album information to the user, when clicked.
-	- The main screen shows:
-	  - The album cover image.
-	  - The album title.
-	  - The artist and the number of plays from the album.
-	  - The other genres this album belong to, can be swiped if exceeds the screen width.
-	  - List of all the tracks in the album, with track title, artist name and album cover image.
+      - A back button on top left corner, that takes the user back to the genre detail screen.
+      - An info button on top right corner, that displays the album information to the user, when clicked.
+      - The main screen shows:
+        - The album cover image.
+	- The album title.
+        - The artist and the number of plays from the album.
+        - The other genres this album belong to, can be swiped if exceeds the screen width.
+	- List of all the tracks in the album, with track title, artist name and album cover image.
     - ### Artist Detail Screen
-	This screen has the tracks by the chosen artist, tracks belonging to the initially chosen genre. The features are:
-	- A back button on top left corner, that takes the user back to the genre detail screen.
-	- An info button on top right corner, that displays the artist information to the user, when clicked.
-	- The main screen shows:
-	  - The artist's image.
-	  - The artist's name.
-	  - The number of plays for the artist and their follower count.
-	  - The other genres this artist has songs in, can be swiped if exceeds the screen width.
-	  - List of all the tracks by the artist, with track title, artist name and album cover image.
+      - A back button on top left corner, that takes the user back to the genre detail screen.
+      - An info button on top right corner, that displays the artist information to the user, when clicked.
+      - The main screen shows:
+	- The artist's image.
+	- The artist's name.
+	- The number of plays for the artist and their follower count.
+	- The other genres this artist has songs in, can be swiped if exceeds the screen width.
+        - List of all the tracks by the artist, with track title, artist name and album cover image.
 
 - ### Assumptions
 
