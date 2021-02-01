@@ -3,16 +3,16 @@
 Under each genre, the songs are further grouped under *Albums* and *Artists*. Additionally, there 
 is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 
-- Exploring the app features:
+- ## Exploring the app features:
 
-    - ###Home Screen
+    - ### Home Screen
 	The home screen shows the top genres to the user and the list expands to show all the available genres.
 	To make things convinient for the users, *a _search bar_ has been added* so that users can directly search
 	for their choice of genre.
 	
 	:point_right: Clicking on any genre displays a new genre detail screen to the user.
     
-    - ###Genre Detail Screen
+    - ### Genre Detail Screen
 	 This screen shows the following:
 	 - The name of genre selected on the top left corner.
 	 - An info button at top right corner, that shows the information about the genre, when clicked.
@@ -43,7 +43,7 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	  - List of all the tracks by the artist, with track title, artist name and album cover image.
 
 - ### Assumptions
-    :point_right: No user would like to manually look for his choice genre in a large list of genres,
+   > :point_right: No user would like to manually look for his choice genre in a large list of genres,
 		  a **search operation is desired**.
-    :point_right: Users might not be interested in knowing about the genre or the album and even the artist.
+   > :point_right: Users might not be interested in knowing about the genre or the album and even the artist.
 		  Keeping the textual **information behind a info button gives a better appearance**. 
