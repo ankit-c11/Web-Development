@@ -31,7 +31,7 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	  - The artist and the number of plays from the album.
 	  - The other genres this album belong to, can be swiped if exceeds the screen width.
 	  - List of all the tracks in the album, with track title, artist name and album cover image.
-    - ###Artist Detail Screen
+    - ### Artist Detail Screen
 	This screen has the tracks by the chosen artist, tracks belonging to the initially chosen genre. The features are:
 	- A back button on top left corner, that takes the user back to the genre detail screen.
 	- An info button on top right corner, that displays the artist information to the user, when clicked.
@@ -43,7 +43,6 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	  - List of all the tracks by the artist, with track title, artist name and album cover image.
 
 - ### Assumptions
->
     :point_right: No user would like to manually look for his choice genre in a large list of genres,
 		  a **search operation is desired**.
     :point_right: Users might not be interested in knowing about the genre or the album and even the artist.
