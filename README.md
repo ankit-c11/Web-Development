@@ -20,7 +20,9 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	   - **Artists**: If selected, lists the various artists who have songs in the selected genre.
 	   - **Albums**: If selected, lists all the albums having songs of the selected genre.
 	   - **Tracks**: Lists all the tracks under this genre.
+	   
 	 > For all the three tabs avaiable, a different layout for presenting the track/album/artist title and the corresponding cover image has been designed.
+	 
     - ### Album Detail Screen
 	This screen has the tracks from the chosen album, tracks belonging to the initially chosen genre. The features are:
 	- A back button on top left corner, that takes the user back to the genre detail screen.
@@ -43,7 +45,9 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 	  - List of all the tracks by the artist, with track title, artist name and album cover image.
 
 - ### Assumptions
+
     :point_right: No user would like to manually look for his choice genre in a large list of genres,
 		  a **search operation is desired**.
+		  
     :point_right: Users might not be interested in knowing about the genre or the album and even the artist.
 		  Keeping the textual **information behind a info button gives a better appearance**. 
