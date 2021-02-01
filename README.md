@@ -6,8 +6,8 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 - ## Exploring the app features:
 
     - ### Home Screen
-	The home screen shows the top genres to the user and the list expands to show all the available genres.
-	To make things convinient for the users, *a _search bar_ has been added* so that users can directly search
+	- The home screen shows the top genres to the user and the list expands to show all the available genres.
+	- To make things convinient for the users, *a _search bar_ has been added* so that users can directly search
 	for their choice of genre.
 	
 	:point_right: Clicking on any genre displays a new genre detail screen to the user.
