@@ -1,10 +1,9 @@
-#MusicWiki App
-
+# MusicWiki App
 ### The app presents an **organized collection of songs**, grouped primarily under different *Genres*. 
-    Under each genre, the songs are further grouped under *Albums* and *Artists*. Additionally, there 
-    is a third tab *Tracks* that lists all the tracks under this genre ***at once***
+Under each genre, the songs are further grouped under *Albums* and *Artists*. Additionally, there 
+is a third tab *Tracks* that lists all the tracks under this genre ***at once***
 
-- ##Exploring the app features:
+- Exploring the app features:
 
     - ### Home Screen
 	The home screen shows the top genres to the user and the list expands to show all the available genres.
