@@ -41,7 +41,7 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
          - The other genres this artist has songs in, can be swiped if exceeds the screen width.
          - List of all the tracks by the artist, with track title, artist name and album cover image.
 
-- ### Assumptions
+- ## Assumptions
 
     :point_right: No user would like to manually look for his choice genre in a large list of genres,
 		  a **search operation is desired**.
