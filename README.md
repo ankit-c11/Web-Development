@@ -14,12 +14,12 @@ is a third tab *Tracks* that lists all the tracks under this genre ***at once***
     
     - ### Genre Detail Screen
 	 This screen shows the following:
-	 - The name of genre selected on the top left corner.
-	 - An info button at top right corner, that shows the information about the genre, when clicked.
-	 - Three tabs, *Artists, Albums and Tracks*, only one of which can be selected to be on display at a time.
-	   - **Artists**: If selected, lists the various artists who have songs in the selected genre.
-	   - **Albums**: If selected, lists all the albums having songs of the selected genre.
-	   - **Tracks**: Lists all the tracks under this genre.
+      - The name of genre selected on the top left corner.
+      - An info button at top right corner, that shows the information about the genre, when clicked.
+      - Three tabs, *Artists, Albums and Tracks*, only one of which can be selected to be on display at a time.
+        - **Artists**: If selected, lists the various artists who have songs in the selected genre.
+	- **Albums**: If selected, lists all the albums having songs of the selected genre.
+	- **Tracks**: Lists all the tracks under this genre.
 	   
 	 > For all the three tabs avaiable, a different layout for presenting the track/album/artist title and the corresponding cover image has been designed.
 	 
